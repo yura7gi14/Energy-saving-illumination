@@ -29,29 +29,11 @@ void draw(){
   background(0,0,0);          //画面の再描画
   
   //ゲージの下地描画
-  fill(100,0,0);              //色指定
+  fill(255);              //色指定
   rect(x, y, 800, 65);        //ゲージの下地描画
   
-  fill(255,255,0);            //色指定
-  //横軸表示
-  textSize(20);               //テキストサイズ
-  textAlign(CENTER);          //中央揃え
-  text(  0, x,        150);   //0
-  text( 50, x+val1,   150);   //50
-  text(100, x+val1*2, 150);   //100
-  text(150, x+val1*3, 150);   //150
-  text(200, x+val1*4, 150);   //200
-  text(250, x+val1*5, 150);   //250
-  text(300, x+val1*6, 150);   //300
-  text(350, x+val1*7, 150);   //350
-  text(400, x+val1*8, 150);   //400
-  text("cm", x+val1*8+40, 150); //cm
   
-  //距離ゲージ表示
-  fill(255,255,0);               //色指定
-  rect(x, y, distance*val2, 65); //横棒描画
-  
-  fill(255,0,0);                 //色指定
+  fill(0);                 //色指定
   //距離表示
   textSize(60);                  //テキストサイズ
   textAlign(RIGHT);              //右揃え
