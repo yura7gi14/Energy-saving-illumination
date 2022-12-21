@@ -44,7 +44,12 @@ void draw(){
   textAlign(LEFT);               //左揃え
   text("cm", 355, 115);          //cm表示
 
+  if(distance < 100){
+    //人が来たことを出力
+    textSize(60);
+    textAlign(RIGHT);
+    text("come humans", 350,120);
+  }
 
-  
   delay(100);
 }
