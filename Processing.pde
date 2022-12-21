@@ -44,6 +44,6 @@ void serialEvent(Serial serial) {
   if((int (tokens[0]))>1){
     values =(tokens[0]);
   }else{
-    values = "Detects enemies";
+    values = "come humans";
   }
 }
