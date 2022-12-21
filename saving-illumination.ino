@@ -39,7 +39,8 @@ void loop() {
     ledValue = 255; //夜
     //ここでLEDのつけるつけない判定を行う
     if(ProDelay > 0){
-      Distance = 340*ProDelay/2/10000; // 音速340m/sとして距離の計算とcmへの換算
+     ProDelay = ProDelay / 2;
+     Distance = ProDelay * 340 * 100 / 1000000;
     }
   }  
   analogWrite(LED_PIN, ledValue);
