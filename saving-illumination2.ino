@@ -25,17 +25,17 @@ void loop() {
   digitalWrite( TRIG, HIGH );
   delayMicroseconds( 10 ); 
   digitalWrite( TRIG, LOW );
-  duration = pulseIn( ECHO, HIGH ); // 蠕蠕ｩ縺ｫ縺九°縺｣縺滓凾髢薙′霑泌唆縺輔ｌ繧擬繝槭う繧ｯ繝ｭ遘綻
+  duration = pulseIn( ECHO, HIGH ); //往復にかかった時間が返却される
 
   if (duration > 0) {
-    duration = duration / 2; // 蠕霍ｯ縺ｫ縺九°縺｣縺滓凾髢�
+    duration = duration / 2; 
     distance = duration * speed_of_sound * 100 / 1000000;
-    Serial.println((int)distance);
-    Serial.write((int)distance);
-    if(distance >= 1200){
-      digitalWrite(LED_PIN,LOW);
+    Serial.println((int)distance); //arduino上での出力
+    Serial.write((int)distance); //データの出力(arduino→processing)
+    if(distance >= 1200){         //距離がだいぶ離れているのなら
+      digitalWrite(LED_PIN,LOW); //LEDを光らせない
     }else{
-      digitalWrite(LED_PIN,HIGH);
+      digitalWrite(LED_PIN,HIGH); //LEDを光らせる
     }
   }
 
