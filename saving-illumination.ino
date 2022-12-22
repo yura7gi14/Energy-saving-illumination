@@ -21,7 +21,7 @@ void loop() {
   sensorValue = analogRead(SENSOR_PIN);
   Serial.println(sensorValue);
 
-  degitalWrite(TrigPin,LOW);
+  digitalWrite(TrigPin,LOW);
   delayMicroseconds(10);
 
   //超音波を出力するためのトリガ信号生成
