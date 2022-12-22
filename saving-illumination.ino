@@ -1,3 +1,5 @@
+//本来実装したかったプログラム
+
 const int SENSOR_PIN = A0;
 const int LED_PIN = 13;
 int sensorValue = 0;

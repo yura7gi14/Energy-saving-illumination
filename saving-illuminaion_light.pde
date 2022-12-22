@@ -1,3 +1,5 @@
+//本来実装したかったプログラム
+
 import processing.serial.*; //Arduinoと通信するためのライブラリの読み込み
 Serial myPort;              //シリアル通信を行うための変数を定義
 PFont  myFont;              //画面に表示するフォントの指定
