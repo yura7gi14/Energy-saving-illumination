@@ -1,3 +1,4 @@
+//最終完成プログラム
 import processing.serial.*; 
 Serial myPort;              
 PFont  myFont;              
