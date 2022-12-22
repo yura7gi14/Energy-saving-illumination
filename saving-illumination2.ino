@@ -31,11 +31,11 @@ void loop() {
     duration = duration / 2; // 蠕霍ｯ縺ｫ縺九°縺｣縺滓凾髢�
     distance = duration * speed_of_sound * 100 / 1000000;
     Serial.println((int)distance);
-
-    if(distance > 100){
-        digitalWrite(LED_PIN,HIGH);
+    Serial.write((int)distance);
+    if(distance >= 1200){
+      digitalWrite(LED_PIN,LOW);
     }else{
-        digitalWrite(LED_PIN,LOW);
+      digitalWrite(LED_PIN,HIGH);
     }
   }
 
